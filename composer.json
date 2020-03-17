@@ -15,6 +15,13 @@
         "laravel/tinker": "^1.0",
         "unisharp/laravel-filemanager": "~1.8"
     },
+    
+     "post-install-cmd": [
+     "php artisan clear-compiled",
+     "chmod -R 777 public/"
+ ],
+    
+    
     "require-dev": {
         "appzcoder/crud-generator": "^3.0",
         "beyondcode/laravel-dump-server": "^1.0",
@@ -63,3 +70,4 @@
         ]
     }
 }
+
